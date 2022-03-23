@@ -1,0 +1,137 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HandleMsg",
+  "description": "Handle messages",
+  "anyOf": [
+    {
+      "description": "mint a pack of 3 cards",
+      "type": "object",
+      "required": [
+        "mint"
+      ],
+      "properties": {
+        "mint": {
+          "type": "object",
+          "required": [
+            "description",
+            "fullres",
+            "thumbnail",
+            "title"
+          ],
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "fullres": {
+              "type": "string"
+            },
+            "thumbnail": {
+              "type": "string"
+            },
+            "title": {
+              "description": "names to give the cards.  Must provide 3 names",
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    {
+      "description": "change address with administrative power",
+      "type": "object",
+      "required": [
+        "change_admin"
+      ],
+      "properties": {
+        "change_admin": {
+          "type": "object",
+          "required": [
+            "address"
+          ],
+          "properties": {
+            "address": {
+              "description": "address with admin authority",
+              "allOf": [
+                {
+                  "$ref": "#/definitions/HumanAddr"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "description": "halt/start minting",
+      "type": "object",
+      "required": [
+        "set_mint_status"
+      ],
+      "properties": {
+        "set_mint_status": {
+          "type": "object",
+          "required": [
+            "stop"
+          ],
+          "properties": {
+            "stop": {
+              "description": "true if minting should be halted",
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "required": [
+        "new_token_contract"
+      ],
+      "properties": {
+        "new_token_contract": {
+          "type": "object",
+          "required": [
+            "token_contract"
+          ],
+          "properties": {
+            "token_contract": {
+              "description": "new card ContractInfo",
+              "allOf": [
+                {
+                  "$ref": "#/definitions/ContractInfo"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "definitions": {
+    "ContractInfo": {
+      "description": "code hash and address of a contract",
+      "type": "object",
+      "required": [
+        "address",
+        "code_hash"
+      ],
+      "properties": {
+        "address": {
+          "description": "contract's address",
+          "allOf": [
+            {
+              "$ref": "#/definitions/HumanAddr"
+            }
+          ]
+        },
+        "code_hash": {
+          "description": "contract's code hash string",
+          "type": "string"
+        }
+      }
+    },
+    "HumanAddr": {
+      "type": "string"
+    }
+  }
+}

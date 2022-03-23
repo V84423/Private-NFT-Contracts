@@ -1,0 +1,42 @@
+Wallet address=secret1hhv4fkxtruahvvh6rh7xxljf289nq85mcc7p0n
+Uploading contract
+contract:  {
+  contractAddress: 'secret1p32c0xuqu4rcuwxtwe92l6dtmvupnyduv2u8ye',
+  logs: [ { msg_index: 0, log: '', events: [Array] } ],
+  transactionHash: '1AD116D399C0F8E1C83100D164281DCD36C39D8BF46AC7C9863D54CD2FBE3F5F',
+  data: '0A460A2E2F7365637265742E636F6D707574652E763162657461312E4D7367496E7374616E7469617465436F6E747261637412140C55879B80E5478E38CB764AAFE9ABDB381991BC'
+}
+
+Creating viewing key: KZNcs2lDhExWYDW
+response:  {
+  logs: [ { msg_index: 0, log: '', events: [Array] } ],
+  transactionHash: '8C6638B5F7CD93BE1A4005DB706035E8702522570A1F86EE0E43BBCDF87A991B',
+  data: Uint8Array(256) [
+    123,  34, 118, 105, 101, 119, 105, 110, 103,  95, 107, 101,
+    121,  34,  58, 123,  34, 107, 101, 121,  34,  58,  34,  49,
+    122,  81,  83,  57,  71, 112,  88, 114, 100, 112,  65, 117,
+     86,  57,  90, 117,  49,  75,  90, 103,  78, 119,  54,  87,
+     74, 105,  84,  53, 106, 119, 100,  98,  75,  99,  79, 109,
+     86, 102,  75,  75,  82,  52,  61,  34, 125, 125,  32,  32,
+     32,  32,  32,  32,  32,  32,  32,  32,  32,  32,  32,  32,
+     32,  32,  32,  32,  32,  32,  32,  32,  32,  32,  32,  32,
+     32,  32,  32,  32,
+    ... 156 more items
+  ]
+}
+
+
+
+ expected one of `withdraw`, `set_price`, `reset_price`, `buy`, `mint_nft`, `batch_mint_nft`, `set_public_metadata`, `set_private_metadata`, `reveal`, `make_ownership_private`, `set_global_approval`, `set_whitelisted_approval`, `approve`, `revoke`, `approve_all`, `revoke_all`, `transfer_nft`, `batch_transfer_nft`, `send_nft`, `batch_send_nft`, `burn_nft`, `batch_burn_nft`, `register_receive_nft`, `create_viewing_key`, `set_viewing_key`, `add_minters`, `remove_minters`, `set_minters`, `change_admin`, `set_contract_status`
+
+
+
+Wallet address=secret1hhv4fkxtruahvvh6rh7xxljf289nq85mcc7p0n
+Uploading contract
+code-hash 6b2f2652763ad2e48aaf365fec182c35519a07767c550a714882d7fdc32cc126
+contract:  {
+  contractAddress: 'secret1y799ax7grct8ax7jvq389nruddw7zw0dsnp8c8',
+  logs: [ { msg_index: 0, log: '', events: [Array] } ],
+  transactionHash: 'BF397E0E2E718D3A291AA0C6200C4EBBDC2DB8FE7EB98F31A0B80305A3B0198E',
+  data: '0A460A2E2F7365637265742E636F6D707574652E763162657461312E4D7367496E7374616E7469617465436F6E74726163741214278A5E9BC81E167E9BD2602272CC7C6B5DE139ED'
+}

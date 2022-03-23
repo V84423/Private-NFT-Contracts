@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "QueryAnswer",
+  "description": "Responses from queries",
+  "anyOf": [
+    {
+      "description": "minter config",
+      "type": "object",
+      "required": [
+        "config"
+      ],
+      "properties": {
+        "config": {
+          "type": "object",
+          "required": [
+            "minting_has_halted"
+          ],
+          "properties": {
+            "minting_has_halted": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    }
+  ]
+}
